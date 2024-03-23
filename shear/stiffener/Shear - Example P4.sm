@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7610.506"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>484d55bb-4a28-4502-a7a2-a6ff8d7dba1c</id>
+      <revision>7</revision>
+    </identity>
+    <calculation>
+      <precision>3</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7610.506" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7610.506" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.7610.506" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.7610.506" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="117" top="0" width="514" height="74" color="#000000" fontSize="42">
+      <text lang="por">
+        <p fontName="Monotype Corsiva">Exercício Exemplo Prova</p>
+      </text>
+    </region>
+    <region left="324" top="63" width="100" height="41" color="#000000" fontSize="21">
+      <text lang="por">
+        <p fontName="Monotype Corsiva">Cortante</p>
+      </text>
+    </region>
+    <region left="0" top="99" width="68" height="24" color="#000000" fontSize="10">
+      <text lang="por">
+        <p fontName="Arial">Legenda:</p>
+      </text>
+    </region>
+    <region left="0" top="117" width="118" height="24" color="#000000" bgColor="#80ffff" fontSize="10">
+      <text lang="por" width="114">
+        <p fontName="Arial">Dados de entrada</p>
+      </text>
+    </region>
+    <region left="0" top="135" width="79" height="24" color="#000000" bgColor="#ffff80" fontSize="10">
+      <text lang="por">
+        <p fontName="Arial">Respostas </p>
+      </text>
+    </region>
+    <region top="162" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Coeficientes de Ponderação</p>
+        </title>
+      </area>
+      <region left="0" top="180" width="74" height="30" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">γ.a1</e>
+            <e type="operand">1.1</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region top="207" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="225" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Propriedades do Metal</p>
+        </title>
+      </area>
+      <region left="0" top="243" width="112" height="50" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">E</e>
+            <e type="operand">20000</e>
+            <e type="operand" style="unit">kN</e>
+            <e type="operand" style="unit">cm</e>
+            <e type="operand">2</e>
+            <e type="operator" args="2">^</e>
+            <e type="operator" args="2">/</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="297" width="95" height="50" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">f.y</e>
+            <e type="operand">25</e>
+            <e type="operand" style="unit">kN</e>
+            <e type="operand" style="unit">cm</e>
+            <e type="operand">2</e>
+            <e type="operator" args="2">^</e>
+            <e type="operator" args="2">/</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region top="342" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="360" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Propriedades do Perfil</p>
+        </title>
+      </area>
+      <region left="0" top="378" width="82" height="24" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">d</e>
+            <e type="operand">650</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="396" width="89" height="30" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">h.w</e>
+            <e type="operand">625</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="99" top="396" width="279" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">Perfil soldado não desconta a altura da solda</p>
+        </text>
+      </region>
+      <region left="0" top="423" width="73" height="30" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">t.w</e>
+            <e type="operand">8</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="450" width="82" height="24" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">h</e>
+            <e type="operand" style="unit">625</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="468" width="89" height="30" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">b.f</e>
+            <e type="operand">300</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="495" width="97" height="30" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">t.f</e>
+            <e type="operand">12.5</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="522" width="66" height="24" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math error="0" errorLocation="1">
+          <input>
+            <e type="operand">a</e>
+            <e type="operand">#</e>
+            <e type="operand" style="unit">mm</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="0" top="540" width="79" height="30" color="#000000" bgColor="#80ffff" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">A.w</e>
+            <e type="operand">d</e>
+            <e type="operand">t.w</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="396" top="540" width="88" height="39" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">A.w</e>
+          </input>
+          <contract>
+            <e type="operand" style="unit">cm</e>
+            <e type="operand">2</e>
+            <e type="operator" args="2">^</e>
+          </contract>
+          <result action="numeric">
+            <e type="operand">52</e>
+          </result>
+        </math>
+      </region>
+      <region left="81" top="549" width="309" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region top="576" color="#000000">
+        <area collapsed="false">
+          <title lang="por">
+            <p fontName="Arial">Enrijecedores de Alma</p>
+          </title>
+        </area>
+        <region left="0" top="594" width="62" height="24" color="#000000" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">Não</e>
+              <e type="operand">0</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="0" top="612" width="62" height="24" color="#000000" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">Sim</e>
+              <e type="operand">1</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="0" top="630" width="160" height="24" color="#000000" bgColor="#80ffff" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">Enrijecedores</e>
+              <e type="operand">Não</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="162" top="630" width="493" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">Não há especificação de enrijecedores, então é considerado que não há nenhum</p>
+          </text>
+        </region>
+        <region left="0" top="648" width="166" height="215" color="#000000" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">Enrijecedores</e>
+              <e type="operand">0</e>
+              <e type="operator" args="2">≡</e>
+              <e type="operand">k.v</e>
+              <e type="operand">5</e>
+              <e type="operator" args="2">:</e>
+              <e type="operand">a</e>
+              <e type="operand">h.w</e>
+              <e type="operator" args="2">/</e>
+              <e type="operand">260</e>
+              <e type="operand">t.w</e>
+              <e type="operator" args="2">*</e>
+              <e type="operand">h.w</e>
+              <e type="operator" args="2">/</e>
+              <e type="bracket">(</e>
+              <e type="operand">2</e>
+              <e type="operator" args="2">^</e>
+              <e type="operator" args="2">&gt;</e>
+              <e type="operand">k.v</e>
+              <e type="operand">5</e>
+              <e type="operator" args="2">:</e>
+              <e type="operand">k.v</e>
+              <e type="operand">5</e>
+              <e type="operand">5</e>
+              <e type="operand">h.w</e>
+              <e type="operand">2</e>
+              <e type="operator" args="2">^</e>
+              <e type="operator" args="2">*</e>
+              <e type="operand">a</e>
+              <e type="operand">2</e>
+              <e type="operator" args="2">^</e>
+              <e type="operator" args="2">/</e>
+              <e type="operator" args="2">+</e>
+              <e type="operator" args="2">:</e>
+              <e type="function" args="3">if</e>
+              <e type="function" args="3">if</e>
+            </input>
+          </math>
+        </region>
+        <region left="144" top="810" width="247" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">---------------------------------------------------&gt;</p>
+          </text>
+        </region>
+        <region left="396" top="810" width="50" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">k.v</e>
+            </input>
+            <result action="numeric">
+              <e type="operand">5</e>
+            </result>
+          </math>
+        </region>
+        <region top="846" color="#000000">
+          <area terminator="true" />
+        </region>
+      </region>
+      <region top="864" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="882" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Verificação das esbeltexzs</p>
+        </title>
+      </area>
+      <region left="0" top="900" width="64" height="53" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.e</e>
+            <e type="operand">h.w</e>
+            <e type="operand">t.w</e>
+            <e type="operator" args="2">/</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="72" top="918" width="318" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-------------------------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="918" width="90" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.e</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">78.125</e>
+          </result>
+        </math>
+      </region>
+      <region left="0" top="954" width="130" height="55" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.p</e>
+            <e type="operand">1.1</e>
+            <e type="operand">k.v</e>
+            <e type="operand">E</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">f.y</e>
+            <e type="operator" args="2">/</e>
+            <e type="function" args="1">sqrt</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="135" top="972" width="256" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="972" width="82" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">λ.p</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">69.57</e>
+          </result>
+        </math>
+      </region>
+      <region left="0" top="1017" width="138" height="55" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.r</e>
+            <e type="operand">1.37</e>
+            <e type="operand">k.v</e>
+            <e type="operand">E</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">f.y</e>
+            <e type="operator" args="2">/</e>
+            <e type="function" args="1">sqrt</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="135" top="1026" width="256" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1026" width="90" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">λ.r</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">86.646</e>
+          </result>
+        </math>
+      </region>
+      <region left="0" top="1080" width="214" height="134" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.e</e>
+            <e type="operand">λ.p</e>
+            <e type="operator" args="2">≤</e>
+            <e type="operand">Seção</e>
+            <e type="operand" style="string">Compacta</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">λ.e</e>
+            <e type="operand">λ.r</e>
+            <e type="operator" args="2">&gt;</e>
+            <e type="operand">Seção</e>
+            <e type="operand" style="string">Esbelta</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">Seção</e>
+            <e type="operand" style="string">Semicompacta</e>
+            <e type="operator" args="2">:</e>
+            <e type="function" args="3">if</e>
+            <e type="function" args="3">if</e>
+          </input>
+        </math>
+      </region>
+      <region left="216" top="1188" width="176" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1188" width="180" height="24" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">Seção</e>
+          </input>
+          <result action="numeric">
+            <e type="operand" style="string">Semicompacta</e>
+          </result>
+        </math>
+      </region>
+      <region top="1206" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="1224" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Resistência do Perfil ao Cisalhamento</p>
+        </title>
+      </area>
+      <region left="0" top="1242" width="125" height="30" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">V.pl</e>
+            <e type="operand">A.w</e>
+            <e type="operand">0.6</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">f.y</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="126" top="1242" width="264" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-------------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1242" width="93" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">V.pl</e>
+          </input>
+          <contract>
+            <e type="operand" style="unit">kN</e>
+          </contract>
+          <result action="numeric">
+            <e type="operand">780</e>
+          </result>
+        </math>
+      </region>
+      <region top="1269" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="1287" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Resistência Máxima ao Cisalhamento nos Regimes</p>
+        </title>
+      </area>
+      <region top="1305" color="#808080">
+        <area collapsed="false">
+          <title lang="por">
+            <p fontName="Arial">Regime Compacto</p>
+          </title>
+        </area>
+        <region left="18" top="1323" width="135" height="53" color="#000000" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">V.Rd.compacto</e>
+              <e type="operand">V.pl</e>
+              <e type="operand">γ.a1</e>
+              <e type="operator" args="2">/</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="153" top="1332" width="238" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">-------------------------------------------------&gt;</p>
+          </text>
+        </region>
+        <region left="396" top="1332" width="182" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">V.Rd.compacto</e>
+            </input>
+            <contract>
+              <e type="operand" style="unit">kN</e>
+            </contract>
+            <result action="numeric">
+              <e type="operand">709.091</e>
+            </result>
+          </math>
+        </region>
+        <region top="1368" color="#808080">
+          <area terminator="true" />
+        </region>
+      </region>
+      <region top="1386" color="#808080">
+        <area collapsed="false">
+          <title lang="por">
+            <p fontName="Arial">Regime Semicompacto</p>
+          </title>
+        </area>
+        <region left="18" top="1404" width="190" height="53" color="#000000" fontSize="10">
+          <math decimalPlaces="4">
+            <input>
+              <e type="operand">V.Rd.semicompacto</e>
+              <e type="operand">λ.p</e>
+              <e type="operand">λ.e</e>
+              <e type="operator" args="2">/</e>
+              <e type="operand">V.pl</e>
+              <e type="operand">γ.a1</e>
+              <e type="operator" args="2">/</e>
+              <e type="operator" args="2">*</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="207" top="1422" width="185" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">-------------------------------------&gt;</p>
+          </text>
+        </region>
+        <region left="396" top="1422" width="208" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">V.Rd.semicompacto</e>
+            </input>
+            <contract>
+              <e type="operand" style="unit">kN</e>
+            </contract>
+            <result action="numeric">
+              <e type="operand">631.444</e>
+            </result>
+          </math>
+        </region>
+        <region top="1449" color="#808080">
+          <area terminator="true" />
+        </region>
+      </region>
+      <region top="1467" color="#808080">
+        <area collapsed="false">
+          <title lang="por">
+            <p fontName="Arial">Regime Esbelto</p>
+          </title>
+        </area>
+        <region left="18" top="1476" width="220" height="64" color="#000000" fontSize="10">
+          <math>
+            <input>
+              <e type="operand">V.Rd.esbelto</e>
+              <e type="operand">1.24</e>
+              <e type="operand">λ.p</e>
+              <e type="operand">λ.e</e>
+              <e type="operator" args="2">/</e>
+              <e type="bracket">(</e>
+              <e type="operand">2</e>
+              <e type="operator" args="2">^</e>
+              <e type="operator" args="2">*</e>
+              <e type="operand">V.pl</e>
+              <e type="operand">γ.a1</e>
+              <e type="operator" args="2">/</e>
+              <e type="operator" args="2">*</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="234" top="1503" width="158" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">-------------------------------&gt;</p>
+          </text>
+        </region>
+        <region left="396" top="1503" width="176" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+          <math>
+            <description active="false" position="Top" lang="eng">
+              <p fontName="Arial"></p>
+            </description>
+            <input>
+              <e type="operand">V.Rd.esbelto</e>
+            </input>
+            <contract>
+              <e type="operand" style="unit">kN</e>
+            </contract>
+            <result action="numeric">
+              <e type="operand">697.251</e>
+            </result>
+          </math>
+        </region>
+        <region top="1530" color="#808080">
+          <area terminator="true" />
+        </region>
+      </region>
+      <region left="0" top="1548" width="188" height="151" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">λ.e</e>
+            <e type="operand">λ.p</e>
+            <e type="operator" args="2">≤</e>
+            <e type="operand">V.Rd</e>
+            <e type="operand">V.Rd.compacto</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">λ.e</e>
+            <e type="operand">λ.r</e>
+            <e type="operator" args="2">&gt;</e>
+            <e type="operand">V.Rd</e>
+            <e type="operand">V.Rd.esbelto</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">V.Rd</e>
+            <e type="operand">V.Rd.semicompacto</e>
+            <e type="operator" args="2">:</e>
+            <e type="function" args="3">if</e>
+            <e type="function" args="3">if</e>
+          </input>
+        </math>
+      </region>
+      <region left="189" top="1674" width="202" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1674" width="125" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">V.Rd</e>
+          </input>
+          <contract>
+            <e type="operand" style="unit">kN</e>
+          </contract>
+          <result action="numeric">
+            <e type="operand">631.444</e>
+          </result>
+        </math>
+      </region>
+      <region top="1701" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="1719" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Determinação de kv e a para tornar o Perfil Compacto ao Cisalhamento</p>
+        </title>
+      </area>
+      <region left="0" top="1737" width="123" height="58" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">k.v</e>
+            <e type="operand">f.y</e>
+            <e type="operand">E</e>
+            <e type="operator" args="2">/</e>
+            <e type="operand">λ.e</e>
+            <e type="operand">1.1</e>
+            <e type="operator" args="2">/</e>
+            <e type="bracket">(</e>
+            <e type="operand">2</e>
+            <e type="operator" args="2">^</e>
+            <e type="operator" args="2">*</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="117" top="1755" width="273" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">---------------------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1755" width="82" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">k.v</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">6.305</e>
+          </result>
+        </math>
+      </region>
+      <region top="1800" color="#000000">
+        <area collapsed="false">
+          <title lang="por">
+            <p fontName="Arial">Determinação da Distância entre Enrijecedores de Alma de Cisalhamento</p>
+          </title>
+        </area>
+        <region left="0" top="1827" width="99" height="64" color="#000000" fontSize="10">
+          <math decimalPlaces="4">
+            <input>
+              <e type="operand">a</e>
+              <e type="operand">5</e>
+              <e type="operand">h.w</e>
+              <e type="operand">2</e>
+              <e type="operator" args="2">^</e>
+              <e type="operator" args="2">*</e>
+              <e type="function" args="1">sqrt</e>
+              <e type="operand">k.v</e>
+              <e type="operand">5</e>
+              <e type="operator" args="2">-</e>
+              <e type="operator" args="2">/</e>
+              <e type="operator" args="2">:</e>
+            </input>
+          </math>
+        </region>
+        <region left="99" top="1845" width="291" height="24" color="#000000" fontSize="10">
+          <text lang="por">
+            <p fontName="Arial">-------------------------------------------------------------&gt;</p>
+          </text>
+        </region>
+        <region left="396" top="1845" width="112" height="24" color="#000000" bgColor="#ffff80" fontSize="10">
+          <math decimalPlaces="4">
+            <input>
+              <e type="operand">a</e>
+            </input>
+            <contract>
+              <e type="operand" style="unit">cm</e>
+            </contract>
+            <result action="numeric">
+              <e type="operand">107.068</e>
+            </result>
+          </math>
+        </region>
+        <region top="1890" color="#000000">
+          <area terminator="true" />
+        </region>
+      </region>
+      <region top="1908" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+    <region top="1926" color="#000000">
+      <area collapsed="false">
+        <title lang="por">
+          <p fontName="Arial">Verificação do valor de a</p>
+        </title>
+      </area>
+      <region left="0" top="1944" width="167" height="47" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">l.EsquerdoDaEquação</e>
+            <e type="operand">a</e>
+            <e type="operand">h.w</e>
+            <e type="operator" args="2">/</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="171" top="1953" width="220" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">---------------------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="1953" width="185" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">l.EsquerdoDaEquação</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">1.713</e>
+          </result>
+        </math>
+      </region>
+      <region left="0" top="1989" width="215" height="64" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">l.DireitoDaEquação</e>
+            <e type="operand">260</e>
+            <e type="operand">t.w</e>
+            <e type="operator" args="2">*</e>
+            <e type="operand">h.w</e>
+            <e type="operator" args="2">/</e>
+            <e type="bracket">(</e>
+            <e type="operand">2</e>
+            <e type="operator" args="2">^</e>
+            <e type="operator" args="2">:</e>
+          </input>
+        </math>
+      </region>
+      <region left="216" top="2016" width="176" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">-----------------------------------&gt;</p>
+        </text>
+      </region>
+      <region left="396" top="2016" width="186" height="30" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math>
+          <input>
+            <e type="operand">l.DireitoDaEquação</e>
+          </input>
+          <result action="numeric">
+            <e type="operand">11.076</e>
+          </result>
+        </math>
+      </region>
+      <region left="0" top="2061" width="334" height="79" color="#000000" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">l.EsquerdoDaEquação</e>
+            <e type="operand">l.DireitoDaEquação</e>
+            <e type="operator" args="2">&gt;</e>
+            <e type="operand">R</e>
+            <e type="operand" style="string">kv vale 5, a deverá ser corrigido</e>
+            <e type="operator" args="2">:</e>
+            <e type="operand">R</e>
+            <e type="operand" style="string">O valor de a está verificado</e>
+            <e type="operator" args="2">:</e>
+            <e type="function" args="3">if</e>
+          </input>
+        </math>
+      </region>
+      <region left="297" top="2115" width="91" height="24" color="#000000" fontSize="10">
+        <text lang="por">
+          <p fontName="Arial">----------------&gt;</p>
+        </text>
+      </region>
+      <region left="387" top="2115" width="276" height="24" color="#000000" bgColor="#ffff80" fontSize="10">
+        <math decimalPlaces="4">
+          <input>
+            <e type="operand">R</e>
+          </input>
+          <result action="numeric">
+            <e type="operand" style="string">O valor de a está verificado</e>
+          </result>
+        </math>
+      </region>
+      <region top="2142" color="#000000">
+        <area terminator="true" />
+      </region>
+    </region>
+  </regions>
+</worksheet>
